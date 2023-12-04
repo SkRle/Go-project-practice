@@ -34,7 +34,6 @@ func main() {
 	app := fiber.New()
 	routes.Routes(app)
 	routes.InetRoutes(app)
-	routes.Routes(app)
 	initDatabase()
 	app.Listen(":3000")
 }
