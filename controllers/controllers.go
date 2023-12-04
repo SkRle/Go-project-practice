@@ -8,12 +8,7 @@ import (
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v2"
-	"gorm.io/gorm"
 )
-
-func FindIDNameLastName(db *gorm.DB) *gorm.DB {
-	return db.Where("employee_id = ? OR name = ? OR last_name = ?", 100)
-}
 
 func GetProfileUser(c *fiber.Ctx) error {
 
